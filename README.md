@@ -1,12 +1,7 @@
 # AdventureWorks Cycles Sales Analysis
-# AdventureWorks Cycles Sales Analysis
-
 ![Power BI](https://img.shields.io/badge/Tool-Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Domain](https://img.shields.io/badge/Domain-Sales%20Analytics%20%7C%20Business%20Intelligence-blue)
-![Level](https://img.shields.io/badge/Level-Intermediate-orange)
-
----
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -25,52 +20,35 @@
 14. [Project Files](#project-files)
 15. [Contact Information](#contact-information)
 
----
-
 ## Introduction
-
 This project was completed as part of the AltSchool Africa School of Data — Semester 3 assessment, and represents a demonstration of end-to-end business intelligence skills using Power BI. It covers the full analytical workflow from raw data import and transformation through to data modeling, DAX measure creation, interactive dashboard development, and strategic business reporting.
 
 The AdventureWorks dataset — a widely used Microsoft sample database representing a fictional bicycle manufacturing and retail company — was selected as the foundation for this analysis. The project simulates a real-world business intelligence engagement where a data analyst is tasked with evaluating company performance and delivering actionable strategic insights to leadership.
 
-The assessment was evaluated across five criteria totalling 100 points: relevance of perspective chosen (15pts), correctness of analysis (25pts), visualisation clarity (20pts), insights and recommendations (20pts), and methodology and assumptions documentation (15pts). The deliverable consisted of a Power BI dashboard (maximum 5 pages) and a summary report (maximum 2 pages), combined into a single PDF submission.
-
----
-
 ## Project Description
-
 AdventureWorks Cycles is a multinational bicycle manufacturing company that sells products across the United States and internationally. This analysis examines four years of sales data (2011–2014) across multiple dimensions — revenue generation, cost and profitability, product performance, and territory analysis — to produce a comprehensive view of business performance.
 
-The project was conducted from a **sales analytics and business strategy perspective**, with a focus on answering four core business questions:
-
-- **Sales Overview** — How much was sold, and how did sales trend over time?
-- **Cost and Profit Analysis** — How efficiently is the business converting revenue into profit?
-- **Product Performance** — Which products and categories drive the most value?
-- **Territory Analysis** — Where are sales coming from, and which markets are most profitable?
+The project was conducted from a sales analytics and business strategy perspective, with a focus on answering four core business questions:
+* Sales Overview — How much was sold, and how did sales trend over time?
+* Cost and Profit Analysis — How efficiently is the business converting revenue into profit?
+* Product Performance — Which products and categories drive the most value?
+* Territory Analysis — Where are sales coming from, and which markets are most profitable?
 
 The deliverable was a structured analytical report accompanied by four interactive Power BI dashboards, each addressing one of the above dimensions.
 
----
-
 ## Project Aim
-
 The aim of this project was to conduct a comprehensive sales performance analysis of AdventureWorks Cycles using Power BI, with the following specific objectives:
-
-- Evaluate total revenue, cost, profit, and profitability trends across a four-year period (2011–2014)
-- Identify top-performing and underperforming product lines, categories, and subcategories
-- Analyse sales performance and profitability across global territories and markets
-- Uncover patterns in order volume, customer behaviour, and revenue concentration
-- Develop interactive, executive-level dashboards that communicate findings clearly and support data-driven decision-making
-- Deliver structured strategic recommendations backed by data to guide business growth
-
----
+* Evaluate total revenue, cost, profit, and profitability trends across a four-year period (2011–2014)
+* Identify top-performing and underperforming product lines, categories, and subcategories
+* Analyse sales performance and profitability across global territories and markets
+* Uncover patterns in order volume, customer behaviour, and revenue concentration
+* Develop interactive, executive-level dashboards that communicate findings clearly and support data-driven decision-making
+* Deliver structured strategic recommendations backed by data to guide business growth
 
 ## About the Dataset
-
 The AdventureWorks dataset is a relational Microsoft SQL Server sample database representing the operations of a fictional bicycle manufacturer. It contains sales transactions, product information, customer records, and territory data spanning the period from 2011 to 2014.
 
 The following tables were imported and used in the analysis:
-
 - **Sales.SalesOrderDetail** — Line-item detail for each sales transaction, including product, quantity, and unit price
 - **Sales.SalesOrderHeader** — Order-level information including order date, customer ID, and territory ID
 - **Production.Product** — Product master data including product name, class, style, product line, and standard cost
@@ -102,17 +80,9 @@ The AdventureWorks dataset was provided by AltSchool Africa as part of the Semes
 ---
 
 ## Tools Used
-
-- **Power BI Desktop** — Primary tool for data import, transformation, modeling, measure creation, and dashboard development
-  - **Power Query Editor** — Data cleaning, transformation, and preparation
-  - **DAX (Data Analysis Expressions)** — Creation of calculated measures and KPIs
-  - **Data Model View** — Relationship management and schema design
-  - **Report View** — Interactive dashboard and visualisation development
-
----
+Power BI
 
 ## Importing the Dataset
-
 The AdventureWorks dataset was imported into Power BI Desktop by connecting to the SQL Server database. The following eight tables were selected and loaded into the Power BI environment for transformation and analysis:
 
 Sales.SalesOrderDetail, Sales.SalesOrderHeader, Production.Product, Production.ProductSubcategory, Production.ProductCategory, Sales.Customer, Person.Person, and Sales.SalesTerritory.
@@ -285,37 +255,8 @@ From a technical standpoint, this project demonstrates proficiency in the full P
 ---
 
 ## Contact Information
-
-**Aladeloye Esther Aderonke**
-Data & Business Analyst | Healthcare · Business
-
-- 📧 Email: aladeloyeesther616@gmail.com
-- 💼 LinkedIn: [linkedin.com/in/estheraderonke](https://linkedin.com/in/estheraderonke)
-- 🐙 GitHub: [github.com/aderonke27](https://github.com/aderonke27)
-- 📱 Phone: +234 810 636 6936
-
----
-
-*This project was completed as part of the AltSchool Africa School of Data — Semester 3 assessment, demonstrating end-to-end Power BI skills including data import, transformation, modeling, DAX measures, dashboard development, and strategic business reporting.*
-![Power BI](https://img.shields.io/badge/Tool-Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![Domain](https://img.shields.io/badge/Domain-Sales%20Analytics%20%7C%20Business%20Intelligence-blue)
-
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Project Description](#project-description)
-3. [Project Aim](#project-aim)
-4. [About the Dataset](#about-the-dataset)
-5. [Tools Used](#tools-used)
-6. [Importing the Dataset](#importing-the-dataset)
-7. [Data Cleaning and Transformation](#data-cleaning-and-transformation)
-8. [Data Modeling](#data-modeling)
-9. [Data Analysis](#data-analysis)
-10. [Data Visualization](#data-visualization)
-11. [Key Insights](#key-insights)
-12. [Recommendations](#recommendations)
-13. [Conclusion](#conclusion)
-14. [Contact Information](#contact-information)
+* Email: aladeloyeesther616@gmail.com
+* LinkedIn: [linkedin.com/in/estheraderonke](https://linkedin.com/in/estheraderonke)
 
 ## Introduction
 This project was completed as part of the AltSchool Africa School of Data — Semester 3 assessment, and represents a demonstration of end-to-end business intelligence skills using Power BI. It covers the full analytical workflow from raw data import and transformation through to data modeling, DAX measure creation, interactive dashboard development, and strategic business reporting.
@@ -547,19 +488,3 @@ This analysis of AdventureWorks Cycles sales data (2011–2014) delivered a comp
 Despite a modest overall profit margin of 9%, the positive trend in margin improvement from 2013 to 2014 suggests that the business was becoming more operationally efficient. Addressing the post-2013 revenue decline, resolving loss-making territories, and strategically managing the underperforming product lines represent the most impactful near-term opportunities for sustainable growth.
 
 From a technical standpoint, this project demonstrates proficiency in the full Power BI workflow — from raw data import and transformation in Power Query, through relational data modeling and DAX measure development, to the creation of interactive, executive-ready dashboards. It reflects an ability to not only build technically sound analytical solutions, but to translate data findings into structured, actionable business narratives — a skill that sits at the core of effective data and business analysis.
-
----
-
-## Contact Information
-
-**Aladeloye Esther Aderonke**
-Data & Business Analyst | Healthcare · Business
-
-- 📧 Email: aladeloyeesther616@gmail.com
-- 💼 LinkedIn: [linkedin.com/in/estheraderonke](https://linkedin.com/in/estheraderonke)
-- 🐙 GitHub: [github.com/aderonke27](https://github.com/aderonke27)
-- 📱 Phone: +234 810 636 6936
-
----
-
-*This project was completed as part of the AltSchool Africa School of Data — Semester 3 assessment, demonstrating end-to-end Power BI skills including data import, transformation, modeling, DAX measures, dashboard development, and strategic business reporting.*
