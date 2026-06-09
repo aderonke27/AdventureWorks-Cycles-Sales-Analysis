@@ -74,10 +74,7 @@ The AdventureWorks dataset was imported into Power BI Desktop by connecting to t
 
 Each table was loaded into Power Query Editor as a separate query before cleaning and transformation were applied. After all transformations were completed, the Close & Apply function was used to load the cleaned tables into the Power BI data model.
 
----
-
 ## Data Cleaning and Transformation
-
 All data cleaning and transformation steps were performed in Power Query Editor before loading the data into the model.
 
 **Data Type Corrections**
@@ -87,22 +84,17 @@ Column data types were reviewed and corrected where necessary. ID columns that w
 Several categorical fields contained abbreviated codes that were not meaningful in a business context. These were expanded into readable labels to improve interpretability across all dashboards:
 - Product Class: L → Low, M → Medium, H → High
 - Product Line: M → Mountain, R → Road, S → Standard, T → Touring
-- Product Style: W → Women's, M → Men's, U → Universal
+- Product Style: W → Women, M → Men, U → Universal
 
 **Handling Null and Missing Values**
 All columns were reviewed for null and missing values. Where missing values appeared in categorical fields — such as product line or product style — they were replaced with "Unknown" to prevent null values from distorting aggregations or visual outputs. Columns with excessive null values that were not relevant to the analysis were removed entirely.
 
-**Outcome**
 After completing all transformation steps, the cleaned tables were loaded into the Power BI data model using the Close & Apply function, ready for relationship building and measure creation.
 
----
-
 ## Data Modeling
-
 Following data import and cleaning, a relational data model was constructed in Power BI's Model View. Relationships between tables were established using primary and foreign keys to enable accurate cross-table analysis.
 
-The following relationships were configured, all set as **one-to-many**:
-
+The following relationships were configured, all set as one-to-many:
 | From Table | Key | To Table | Key |
 |---|---|---|---|
 | Sales.SalesOrderDetail | ProductID | Production.Product | ProductID |
@@ -114,10 +106,8 @@ The following relationships were configured, all set as **one-to-many**:
 
 This star-schema-style model ensured that all dimensions — products, customers, and territories — were correctly linked to the central sales fact tables, enabling accurate slicing and filtering across all dashboard pages.
 
----
 
 ## Data Analysis
-
 With the data model in place, the following core DAX measures were created to serve as the analytical foundation for all dashboard visualisations:
 
 ```dax
@@ -146,28 +136,14 @@ Revenue and profit were analysed across product categories, subcategories, and p
 **4. Territory Analysis**
 Revenue, profit, total orders, and units sold were compared across all territories and countries to identify the strongest and weakest performing markets.
 
----
-
 ## Data Visualization
-
-Four interactive Power BI dashboard pages were developed, each addressing one analytical dimension. The following visualisation types were used across the dashboards:
-
-- **KPI Cards** — for at-a-glance display of Total Revenue, Total Cost, Total Profit, Profit Margin, Total Orders, Total Quantity Sold, and Total Customers
-- **Line Charts** — for year-on-year trend analysis of revenue, cost, profit, and profit margin
-- **Bar Charts** — for product line, subcategory, and territory performance comparisons
-- **Donut Charts** — for proportional breakdowns of revenue and quantity by product class, style, and category
-- **Scatter Plot** — for visualising the relationship between order quantity and revenue
-- **Map Visual** — for geographic revenue distribution across territories
-- **Horizontal Bar Charts** — for top 10 product rankings by revenue and cost
-
-All dashboards were designed with a consistent navy blue colour theme, clear labelling, and an intuitive layout to support executive-level readability and decision-making.
-
-> 📁 Dashboard screenshots are available in the Project Files section below.
-
----
+Four interactive Power BI dashboard pages were developed, each addressing one analytical dimension.
+Sales overview dashboard showing revenue, units sold, orders, and customer KPIs
+Cost and profit analysis dashboard by product line and year
+Product Performance dashboard by product category, subcategory, and top 10 product revenue
+Territory Analysis dashboard by country-level revenue, profit, and orders
 
 ## Key Insights
-
 ### 1. Overall Sales Performance
 The company generated **$109.85M in total revenue** from **275,000 units sold** across **31,465 orders**, serving approximately **19,820 customers** between 2011 and 2014. Revenue and sales volume grew consistently from 2011 through 2013, peaking in 2013 before declining in 2014 — a pattern that may reflect market saturation, increased competition, or internal operational challenges worth investigating.
 
@@ -190,10 +166,7 @@ The **United States was the primary market**, generating **$63.00M** — approxi
 
 The Southwest, Northwest, and Canada were the strongest performers overall. However, three territories — **Central, Southeast, and Northeast** — recorded **negative profit**, with the Northeast posting the worst loss at **-$0.27M**, pointing to uneven regional performance that needs attention.
 
----
-
 ## Recommendations
-
 ### 1. Improve Profit Margins Through Cost Optimisation
 With an overall profit margin of 9%, a detailed cost review across production, distribution, and regional operations is overdue. The Road product line in particular generates the highest revenue ($48.30M) but a relatively lower profit ($2.82M) — suggesting a pricing or cost structure inefficiency worth addressing.
 
@@ -215,40 +188,17 @@ Australia generated $3.43M profit from $10.66M revenue — a margin of roughly 3
 ### 7. Resolve Loss-Making Territories
 Central, Southeast, and Northeast are all operating at a loss. A targeted review of pricing, logistics costs, and demand patterns in these territories is needed. Where losses cannot be reversed within a reasonable period, restructuring or exit should be considered.
 
----
-
 ## Conclusion
-
 This analysis of AdventureWorks Cycles sales data (2011–2014) revealed a business with strong revenue capacity but thin margins, clear product strengths, and uneven geographic performance. The Bikes category — particularly Mountain and Road — is the commercial backbone, generating over 86% of total revenue. The United States and Southwest remain the dominant markets, while Australia quietly outperforms everyone on profitability.
 
 The post-2013 revenue decline is the most important challenge facing the business. But the improving profit margin in that same period is a meaningful positive signal — showing that operational efficiency was improving even as top-line growth slowed. Addressing the revenue decline, resolving loss-making territories, and rationalising the underperforming product lines are the clearest paths to stronger, more sustainable performance.
 
 From a technical standpoint, this project demonstrates the full Power BI workflow — from raw data import and Power Query transformation, through relational data modeling and DAX measure creation, to interactive executive dashboards. It also reflects the ability to move beyond charts and numbers to deliver structured, business-focused narratives that support real decisions — which is ultimately what data analysis is for.
 
----
-
 ## Project Files
-
-| File | Description |
-|---|---|
-| [View Sales Report (PDF)](./AdventureWorks_Sales_Report.pdf) | Full analytical report including methodology, key insights, and strategic recommendations |
-| [Dashboard Screenshot — Sales Overview](./dashboard_sales_overview.png) | Sales overview dashboard showing revenue, units sold, orders, and customer KPIs |
-| [Dashboard Screenshot — Cost & Profit](./dashboard_cost_profit.png) | Cost and profit analysis dashboard by product line and year |
-| [Dashboard Screenshot — Product Performance](./dashboard_product_performance.png) | Product category, subcategory, and top 10 product revenue dashboard |
-| [Dashboard Screenshot — Territory Analysis](./dashboard_territory.png) | Territory and country-level revenue, profit, and orders dashboard |
-
----
+Full analytical report including methodology, key insights, and strategic recommendations
+[View Sales Report (PDF)](./AdventureWorks_Sales_Report.pdf)
 
 ## Contact Information
-
-**Aladeloye Esther Aderonke**
-Data & Business Analyst | Healthcare · Business
-
-- 📧 Email: aladeloyeesther616@gmail.com
-- 💼 LinkedIn: [linkedin.com/in/estheraderonke](https://linkedin.com/in/estheraderonke)
-- 🐙 GitHub: [github.com/aderonke27](https://github.com/aderonke27)
-- 📱 Phone: +234 810 636 6936
-
----
-
-*This project was completed as part of the AltSchool Africa School of Data — Semester 3 assessment, demonstrating end-to-end Power BI skills including data import, transformation, modeling, DAX measures, dashboard development, and strategic business reporting.*
+* Email: aladeloyeesther616@gmail.com
+* LinkedIn: [linkedin.com/in/estheraderonke](https://linkedin.com/in/estheraderonke)
