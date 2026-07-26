@@ -142,6 +142,10 @@ Sales overview dashboard showing revenue, units sold, orders, and customer KPIs
 Cost and profit analysis dashboard by product line and year
 Product Performance dashboard by product category, subcategory, and top 10 product revenue
 Territory Analysis dashboard by country-level revenue, profit, and orders
+<img width="1497" height="863" alt="Screenshot (196)" src="https://github.com/user-attachments/assets/e58a7fe0-e560-4094-8fda-fd994507ecc9" />
+<img width="1477" height="835" alt="Screenshot (194)" src="https://github.com/user-attachments/assets/a8c9cce5-a7f9-4413-8dda-e1d8e4fcd1c8" />
+<img width="1506" height="880" alt="Screenshot (195)" src="https://github.com/user-attachments/assets/ededccbf-d6ca-4901-a9da-fdee1a31f370" />
+<img width="1497" height="863" alt="Screenshot (196)" src="https://github.com/user-attachments/assets/0869ed85-e76f-46ea-8908-878263173623" />
 
 ## Key Insights
 ### 1. Overall Sales Performance
