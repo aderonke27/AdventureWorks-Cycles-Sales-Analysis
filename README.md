@@ -1,6 +1,6 @@
 # AdventureWorks Cycles Sales Analysis
 ![Power BI](https://img.shields.io/badge/Tool-Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
-![Domain](https://img.shields.io/badge/Domain-Sales%20Analytics%20%7C%20Business%20Intelligence-navyblue)
+![Domain](https://img.shields.io/badge/Domain-Sales%20Analytics%20%7C%20Business%20Intelligence-darkblue)
 
 ## Table of Contents
 1. [Introduction](#introduction)
